@@ -48,6 +48,11 @@ h1 {
   color: var(--fg);
 }
 
+h2 {
+  margin: 0 0 16px 0;
+  font-size: 1.35rem;
+}
+
 .subtitle {
   margin: 0 0 28px 0;
   font-size: 1.05rem;
@@ -93,7 +98,7 @@ button {
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.1s ease;
+  transition: background 0.2s ease, transform 0.1s ease, opacity 0.2s ease;
 }
 
 button:hover {
@@ -104,10 +109,35 @@ button:active {
   transform: translateY(1px);
 }
 
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 #status {
   margin-top: 18px;
   min-height: 24px;
   color: var(--yellow);
+}
+
+.preview-section {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.barcode-box {
+  margin-top: 12px;
+  background: #fbf1c7;
+  border-radius: 14px;
+  padding: 24px;
+  overflow-x: auto;
+}
+
+#barcode {
+  display: block;
+  width: 100%;
+  max-width: 100%;
 }
 
 @media (max-width: 640px) {
