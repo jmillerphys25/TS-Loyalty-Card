@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TS Loyalty Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Digital Loyalty Card Generator</h1>
+      <p class="subtitle">
+        Enter customer phone number in the field below to generate a digital loyalty card.
+      </p>
+
+      <form id="generator-form">
+        <label for="phone">Customer Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="(209) 201-8609"
+          maxlength="14"
+          autocomplete="off"
+        />
+
+        <button type="submit">Generate Card</button>
+      </form>
+
+      <div id="status"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
